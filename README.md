@@ -3,6 +3,6 @@
 Drop/link unit file in `~/.local/share/systemd/user/`
 
 | Action | systemd command |
-| ___ | ___ |
+| --- | --- |
 | Enable at user login time |  `systemctl --user enable emacs` |
 | Start now | `systemctl --user start emacs` |
