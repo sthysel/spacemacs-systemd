@@ -1,12 +1,25 @@
 # Running spacemacs server using systemd user unit
 
-Drop/link unit file in `~/.local/share/systemd/user/`
+This repo contains the `stow` managed systemd unit file. `stow` drops the unit
+file in `~/.local/share/systemd/user/`.
 
-| Action | systemd command |
-| --- | --- |
-| Enable at user login time |  `systemctl --user enable emacs` |
-| Start now | `systemctl --user start emacs` |
+Do `make install`
 
+```
+.
+├── dot/
+│   └── .local/
+│       └── share/
+│           └── systemd/
+│               └── user/
+│                   └── emacs.service
+```
+
+
+| Action                    | systemd command                 |
+| ---                       | ---                             |
+| Enable at user login time | `systemctl --user enable emacs` |
+| Start now                 | `systemctl --user start emacs`  |
 
 # Sources
  - https://streakycobra.github.io/posts/saas-or-spacemacs-as-a-service/
