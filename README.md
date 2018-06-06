@@ -1,5 +1,7 @@
 # Running spacemacs server using systemd user unit
 
+![](pics/spacemacs.png)
+
 This repo contains the `stow` managed systemd unit file. `stow` drops the unit
 file in `~/.local/share/systemd/user/`.
 
